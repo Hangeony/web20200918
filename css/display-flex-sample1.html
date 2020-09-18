@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
@@ -22,53 +23,44 @@
         #dummy {
             flex: 1;
         }
-        .main-container{
-            
+        .main-container {
             margin-top: 30px;
-            display:flex;
-            
+            display: flex;
+           
         }
 
-        .main-container> div{
-            border: 5px solid black;
-          
+        .main-container > div {
+            border: 1px solid black;
         }
-        .sub-menu{
-            width:200px;
 
-        }
-        .side-menu{
+        .side-menu {
             width: 200px;
-
         }
-        .main-container{
-            flex:1;
-
-
+        .main-content {
+            flex: 1;
         }
-        .ad-container{
-            width:200px;
-
+        .ad-container {
+            width: 200px;
         }
-        .sub-menu{
+        .sub-menu {
             position: absolute;
-            display:none;
-            top:80px;
-            left:0px;
-            padding:10px;
-            background-color:white;
-            border-top:5px solid green;
+            display: none;
+            top: 80px;
+            left: 0px;
+            padding: 10px;
+            background-color: white;
+            border-top: 5px solid green;
         }
-        .menu-item{
+        .menu-item {
+            /* float:right */
             position: relative;
         }
-        .menu-item:hover .sub-menu{
-            display:block;
-
+        .menu-item:hover .sub-menu {
+            display: block;
         }
-
     </style>
 </head>
+
 <body>
     <div class="my-menu">
         <div class="menu-item">
@@ -81,47 +73,48 @@
                 <div class="sub-item">Commodi!</div>
             </div>
         </div>
-        
-        <div class="my-menu">
-        <div class="menu-item">
-            REFERENCES <i class="fas fa-caret-down"></i>
-            <div class="sub-menu">
-            <div class="sub-item">Lorem.</div>
-            <div class="sub-item">Veritatis.</div>
-            <div class="sub-item">Molestias?</div>
-            <div class="sub-item">Tempore.</div>
-            <div class="sub-item">Cupiditate?</div>
-            </div>
-        </div>
-        <div class="my-menu">
-        <div class="menu-item">
-            EXAMPLES <i class="fas fa-caret-down"></i>
-            <div class="sub-menu">
-            <div class="sub-item">Lorem.</div>
-            <div class="sub-item">Ea.</div>
-            <div class="sub-item">Ipsam?</div>
-            <div class="sub-item">Veniam!</div>
-            <div class="sub-item">Illum.</div>
-            </div>
-        </div>    
-        <div class="my-meun">
-        <div class="menu-item">
-            EXERCIES <i class="fas fa-caret-down"></i>
-            <div class="sub-menu">
-            <div class="sub-item">Lorem.</div>
-            <div class="sub-item">Laborum!</div>
-            <div class="sub-item">Beatae?</div>
-            <div class="sub-item">Fuga.</div>
-            <div class="sub-item">Inventore?</div>
-        </div>
-        </div>
-        </div>
-        <div id="dummy"></div>
-        <div class="menu-item"><i class="fas fa-adjust"></i></div>
-        <div class="menu-item"><i class="fas fa-globe-americas"></i></div>
-        <div class="menu-item"><i class="fas fa-search"></i></div>
-    </div>
 
+        <div class="my-menu">
+            <div class="menu-item">
+                REFERENCES <i class="fas fa-caret-down"></i>
+                <div class="sub-menu">
+                    <div class="sub-item">Lorem.</div>
+                    <div class="sub-item">Veritatis.</div>
+                    <div class="sub-item">Molestias?</div>
+                    <div class="sub-item">Tempore.</div>
+                    <div class="sub-item">Cupiditate?</div>
+                </div>
+            </div>
+            <div class="my-menu">
+                <div class="menu-item">
+                    EXAMPLES <i class="fas fa-caret-down"></i>
+                    <div class="sub-menu">
+                        <div class="sub-item">Lorem.</div>
+                        <div class="sub-item">Ea.</div>
+                        <div class="sub-item">Ipsam?</div>
+                        <div class="sub-item">Veniam!</div>
+                        <div class="sub-item">Illum.</div>
+                    </div>
+                </div>
+                <div class="my-meun">
+                    <div class="menu-item">
+                        EXERCIES <i class="fas fa-caret-down"></i>
+                        <div class="sub-menu">
+                            <div class="sub-item">Lorem.</div>
+                            <div class="sub-item">Laborum!</div>
+                            <div class="sub-item">Beatae?</div>
+                            <div class="sub-item">Fuga.</div>
+                            <div class="sub-item">Inventore?</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="dummy"></div>
+                <div class="menu-item"><i class="fas fa-adjust"></i></div>
+                <div class="menu-item"><i class="fas fa-globe-americas"></i></div>
+                <div class="menu-item"><i class="fas fa-search"></i></div>
+            </div>
+        </div>
+    </div>
     <div class="main-container">
         <div class="side-menu">
             <div>Lorem.</div>
@@ -157,27 +150,48 @@
         </div>
         <div class="main-content">
             <h1>Lorem, ipsum dolor.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laboriosam atque possimus nam beatae unde asperiores eius repellendus error ipsum, cum consectetur soluta, blanditiis quis voluptas ex sed alias quasi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laboriosam atque possimus nam
+                beatae unde asperiores eius repellendus error ipsum, cum consectetur soluta, blanditiis quis
+                voluptas ex sed alias quasi.</p>
             <h1>Cupiditate, atque sunt?</h1>
-            <p>Quos molestiae accusamus veniam fugit. Harum recusandae deleniti dolor tenetur aut mollitia fuga, dolore nesciunt. Earum quasi, soluta, nihil nisi eos dignissimos enim magnam eveniet alias impedit deserunt eum labore.</p>
+            <p>Quos molestiae accusamus veniam fugit. Harum recusandae deleniti dolor tenetur aut mollitia fuga,
+                dolore nesciunt. Earum quasi, soluta, nihil nisi eos dignissimos enim magnam eveniet alias impedit
+                deserunt eum labore.</p>
             <h1>Explicabo, provident amet.</h1>
-            <p>Nemo, ullam, omnis fugiat expedita vitae consectetur incidunt reiciendis quidem voluptatem adipisci non. Consequuntur eaque quisquam, dignissimos porro incidunt veritatis totam maiores accusamus libero odio, nihil sequi qui modi sed?</p>
+            <p>Nemo, ullam, omnis fugiat expedita vitae consectetur incidunt reiciendis quidem voluptatem adipisci
+                non. Consequuntur eaque quisquam, dignissimos porro incidunt veritatis totam maiores accusamus
+                libero odio, nihil sequi qui modi sed?</p>
             <h1>Quod, fuga in.</h1>
-            <p>Dignissimos error, pariatur eligendi dicta est quidem? Fugiat iste, autem beatae ea tempora, eum illum temporibus eveniet excepturi, hic quia est inventore! Alias similique laudantium distinctio obcaecati? Enim, deleniti illo?</p>
+            <p>Dignissimos error, pariatur eligendi dicta est quidem? Fugiat iste, autem beatae ea tempora, eum
+                illum temporibus eveniet excepturi, hic quia est inventore! Alias similique laudantium distinctio
+                obcaecati? Enim, deleniti illo?</p>
             <h1>Fugit, nobis ipsam.</h1>
-            <p>Rem voluptate maxime laborum ullam? Magnam veritatis ipsa et, quo delectus at autem quisquam dignissimos unde! Dolorum harum quidem cupiditate est, officiis, voluptatum magni ex optio repellendus mollitia impedit consequatur?</p>
+            <p>Rem voluptate maxime laborum ullam? Magnam veritatis ipsa et, quo delectus at autem quisquam
+                dignissimos unde! Dolorum harum quidem cupiditate est, officiis, voluptatum magni ex optio
+                repellendus mollitia impedit consequatur?</p>
             <h1>Sit, animi fugiat.</h1>
-            <p>Fugiat, magni! Nam, illum nostrum repudiandae itaque rerum mollitia officia nulla earum commodi unde enim fugiat! Odio consequatur aspernatur harum eveniet possimus nisi velit, id voluptatibus facilis, ab voluptate blanditiis.</p>
+            <p>Fugiat, magni! Nam, illum nostrum repudiandae itaque rerum mollitia officia nulla earum commodi unde
+                enim fugiat! Odio consequatur aspernatur harum eveniet possimus nisi velit, id voluptatibus facilis,
+                ab voluptate blanditiis.</p>
             <h1>Exercitationem, laborum ex?</h1>
-            <p>Libero, hic eveniet magni vel commodi iure voluptate placeat itaque dolorum molestiae sit laudantium unde nostrum iste eum. Ratione accusantium illo, ea voluptate molestiae veritatis ad rem impedit voluptates molestias!</p>
+            <p>Libero, hic eveniet magni vel commodi iure voluptate placeat itaque dolorum molestiae sit laudantium
+                unde nostrum iste eum. Ratione accusantium illo, ea voluptate molestiae veritatis ad rem impedit
+                voluptates molestias!</p>
             <h1>Voluptas, et amet!</h1>
-            <p>Vel numquam quod, dolor eos dolorem consectetur, temporibus deserunt velit alias vitae et quo qui sed recusandae commodi corporis, saepe cumque molestiae maxime ipsam exercitationem nobis. Fugiat mollitia voluptas earum!</p>
+            <p>Vel numquam quod, dolor eos dolorem consectetur, temporibus deserunt velit alias vitae et quo qui sed
+                recusandae commodi corporis, saepe cumque molestiae maxime ipsam exercitationem nobis. Fugiat
+                mollitia voluptas earum!</p>
             <h1>Debitis, atque quod.</h1>
-            <p>Maxime rerum optio vel quod tempora voluptatibus quae consequatur tenetur eum inventore? Porro pariatur officia facilis quam, sequi quae doloribus recusandae exercitationem itaque adipisci, quod vero ducimus ratione quas enim!</p>
+            <p>Maxime rerum optio vel quod tempora voluptatibus quae consequatur tenetur eum inventore? Porro
+                pariatur officia facilis quam, sequi quae doloribus recusandae exercitationem itaque adipisci, quod
+                vero ducimus ratione quas enim!</p>
             <h1>Dignissimos, quisquam minima!</h1>
-            <p>Perspiciatis ipsum hic qui delectus aspernatur vel totam obcaecati libero vero quibusdam facere, molestias natus ut itaque aliquid placeat. Dicta asperiores soluta saepe temporibus, modi iste consequatur similique vel quasi?</p>
+            <p>Perspiciatis ipsum hic qui delectus aspernatur vel totam obcaecati libero vero quibusdam facere,
+                molestias natus ut itaque aliquid placeat. Dicta asperiores soluta saepe temporibus, modi iste
+                consequatur similique vel quasi?</p>
         </div>
         <div class="ad-container"></div>
     </div>
 </body>
+
 </html>
