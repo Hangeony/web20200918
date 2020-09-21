@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title> 계산</title>
+    <script>
+        function cale(){
+            var x = document.getElementById("x").value;
+            var y = document.getElementById("y").value;
+            var sum;
+            sum = parseInt(x)+parseInt(y);
+            document.getElementById("sum").value =sum;
+        }
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <h2>덧셈밖에 안된다 ㅎ</h2>
+    <form name="myform" action="" method="POST">
+        1번 숫자: <input id="x" /><br />
+        2번 숫자: <input id="y" /><br />
+        합계 :     <input id="sum" /><br />
+        <br>
+        <input type="button" value="응 너머리로 계산해" onclick="cale();" />
+    </form>
+    
+</body>
+</html>
