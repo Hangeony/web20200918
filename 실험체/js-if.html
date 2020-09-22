@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <title>시간 판별기</title>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="text" id="input1"><br>
+    <button onclick="vote()">오전,오후,저녁 판별기</button>
+    <p id="result"></p>
+    <script>
+        function vote(){
+            var time = document.getElementById("input1").value;
+            time = Number(time);
+            
+            document.getElementById("result").innerHTML="";
+            if (time <12){
+                document.getElementById("result").innerHTML="오전 입니다.";
+            }
+            else if (time < 18){
+                document.getElementById("result").innerHTML="오후 입니다.";
+            }
+            else{
+                document.getElementById("result").innerHTML="저녁입니다."
+            }
+        }
+    </script>
+</body>
+</html>
