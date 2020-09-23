@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .b{
+            font-size: 150px;
+        }
+        .a{
+            background-color: black;
+            color:white;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            font-size: 50px;
+            font-weight: bold;
+            border-radius: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button class="b" onclick="lotto()">lotto</button>
+    <div class="a" id="result"></div>
+    <div class="a" id="result"></div>
+    <div class="a" id="result"></div>
+    <div class="a" id="result"></div>
+    <div class="a" id="result"></div>
+    <div class="a" id="result"></div>   
+<script>
+        function lotto(){
+            var numbers="";
+            
+
+            for (var i =0; i<6; i++){
+                var randomNumber= Math.floor(Math.random()*45)+1;
+                numbers += "<div>" +randomNumber +"</div>";
+                
+            // for (var i=0; i<randomNumber; i++){
+            //     if(i === randomNumber[i]){
+            //         return =true;
+            //     }
+               
+            // }
+            
+            
+            
+            }
+            
+            
+            document.getElementById('result').innerHTML=numbers;
+        }
+</script>
+</body>
+</html>

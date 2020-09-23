@@ -6,25 +6,52 @@
     </style>
 </head>
 <body>
-    <button onclick = "rpsGame()"><i class="fas fa-hand-rock"></i></button>
-    <button onclick = "rpsGame()"><i class="fas fa-hand-paper"></i></button>
-    <button onclick = "rpsGame()"><i class="fa fa-hand-scissors"></i></button>
+    <button onclick = "rpsGame(1)"><i class="fas fa-hand-rock"></i></button>
+    <button onclick = "rpsGame(2)"><i class="fas fa-hand-paper"></i></button>
+    <button onclick = "rpsGame(3)"><i class="fa fa-hand-scissors"></i></button>
     <p id ="result"></p>
 
     <br>
 
     <img src=""alt=""id="computer">
     <script>
-        function rpsGame(){
+        function rpsGame(user){
           var r =  Math.floor(Math.random()*3)+1;
           var fileName = "rps" + r + ".png";
           document.getElementById("computer").src=fileName;
           
+         // user - 1묵 2. 보 3. 가위r .1. 가위  2. 보 3 . 묵    
+          if(user == 1 && r==1){
           document.getElementById("result").innerHTML ="You Win";
-          document.getElementById("result").innerHTML ="You Draw";
-          document.getElementById("result").innerHTML ="You loss";
-
+         }
+         else if(user==1 && r==3){
+            document.getElementById("result").innerHTML ="You Draw";
+         }
+         else if(user==1 && r==2){
+            document.getElementById("result").innerHTML ="You loss";
+         }
+         
+         else if(user == 2 && r==3){
+          document.getElementById("result").innerHTML ="You Win";
+         }
+         else if(user==2 && r==2){
+            document.getElementById("result").innerHTML ="You Draw";
+         }
+         else if(user==2 && r==1){
+            document.getElementById("result").innerHTML ="You loss";
+         }
+         
+         else if(user == 3 && r==2){
+          document.getElementById("result").innerHTML ="You Win";
+         }
+         else if(user==3 && r==1){
+            document.getElementById("result").innerHTML ="You Draw";
+         }
+         else{
+            document.getElementById("result").innerHTML ="You loss";
+         }
         }
+        
     </script>
 </body>
 </html>

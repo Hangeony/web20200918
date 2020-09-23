@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <button onclick="rpsGame(1)"><i class="fas fa-hand-scissors"></i></button>
+    <button onclick="rpsGame(2)"><i class="fas fa-hand-paper"></i></button>
+    <button onclick="rpsGame(3)"><i class="fas fa-hand-rock"></i></button>
+    
+    <br>
+
+    <img src="" alt="" id="com">
+    <p id = "result"></p>
+    <script>
+        //1.가위 2. 보 3.묵
+        function rpsGame(user){
+            console.log(user)
+            var computer = Math.floor(Math.random()*3)+1;
+            var fileName="rps"+computer+".png";
+
+            document.getElementById("com").src = fileName;
+            
+            var result;
+
+            if (computer == user) {
+                result = "Drow";
+            } 
+            else if (computer == 1 && user == 3) {
+                result = "Win";
+            } 
+            else if (computer == 2 && user == 1) {
+                result = "Win";
+            } 
+            else if (computer == 3 && user == 2) {
+                result = "Win";
+            } 
+            else {
+                result = "Lose";
+            }
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
