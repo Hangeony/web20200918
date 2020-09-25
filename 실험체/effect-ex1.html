@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .imgButton{
+            background: url("effect1.png");
+            border:none;
+            width: 211px;
+            height: 333px;
+            font-weight: top;
+            
+        }
+        body{
+            background-image: url("effect3.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 1600px;
+            }
+        
+    
+    </style>
+    <script>
+        $(document).ready(function(){
+           $(".imgButton").click(function(){
+               $(".img").toggle();
+           });
+        });
+    </script>
+</head>
+<body>
+    <button class="imgButton"></button><br>
+    <img src="effect2.jpg" class="img" hidden>
+</body>
+</html>
