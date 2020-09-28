@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .note{
+            background-color:  cornflowerblue;
+            font-size: 20px;
+        }
+        .error{
+            text-decoration: line-through;
+            color : white;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#div1").addClass("note");
+            $("#div2").addClass("note error");
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat vitae blanditiis est voluptatum officiis assumenda sequi qui corporis suscipit. Molestias iusto eos quisquam numquam doloremque repellendus quidem amet tempore ad!</div>
+    <div id="div2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta laborum amet pariatur qui. Quisquam nesciunt pariatur saepe doloribus necessitatibus possimus ex, quo consectetur quibusdam ipsum, accusamus culpa tempora temporibus est?</div>
+</body>
+</html>
