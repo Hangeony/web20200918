@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="/codingbat.css">
+        <script src ="/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+        <style>
+        </style>
+        <script>
+            
+        </script>
+    </head>
+    
+
+<body>
+    <div style="float:right; margin:0px; border: 1px solid lightgray;">
+        <table>
+            <from method="post" action="/login"></from>
+            <tbody>
+                <tr>
+                    <td>id/email</td>
+                    <td>
+                        <input type="text" name="uname" size="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td>
+                        <input type="password" name="pw" size="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="dologin" value="login">
+                    </td>
+                </tr>
+                <input type="hidden" name="fromurl" value="/prob/p192082">
+                <tr>
+                    <td colspan="2">
+                        <a href="/reset">forgot password</a>
+                        "|"
+                        <a herf="/pref?docreate=1">create account</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="float:right">
+        <table>
+            <tr>
+                <td valign="top" style="text-align:right" colspan="1"></td>
+            </tr>
+        </table>
+    </div>
+    <a href="/">
+        <span style="font-size:200%">CodingBat</span>
+    </a>
+    "code practice
+    "
+    <div class="tabin">
+        <div class="indent">
+            <a href="/java/Warmup-1">
+                <span class="h2">Warmup-1</span>
+            </a>
+            " > "
+            <span class="h2">icyHot</span>
+            <br>
+            <a href="/prob/p191022">prev</a>
+            "&nbsp;|&nbsp;"
+            <a href="/prob/p144535">next</a>
+            "&nbsp;|&nbsp;"
+            <a rel="nofollow" href="/java/warmup=1?chance=1">chance</a>
+            <p></p>
+            <table border="0">
+                <tbody>
+                    <tr>
+                        <td valign="top">
+                            <div class="minh"></div>
+                            <br>
+                            "iceHot(120, -1) ->true"
+                            <br>
+                            "iceHot(-1, 120) ->true"
+                            <br>
+                            "iceHot(2, 120) -> false"
+                            <p>
+                                <button class=" go" onclick="sendCodeAce();focusEdit();return false;">Go</button>
+                                "...Save,Compile, Run (Ctrl-Enter)"
+                                <span style="margin-left:60px;">
+                                    <button class="gray" onclick="document.getElementById(&quot;results&quot;).innerHTML=&quot;<b>Solution:</b><pre>&quot;+unescape(&quot;public boolean icyHot(int temp1, int temp2) {%0a  if ((temp1 %26lt; 0 %26amp;%26amp; temp2 %26gt; 100) || (temp1 %26gt; 100 %26amp;%26amp; temp2 %26lt; 0)) {%0a    return true;%0a  } else {%0a    return false;%0a  }%0a  // Could be written as: return ((temp1 %26lt; 0 %26amp;%26amp; ...));%0a}&quot; + &quot;</pre>&quot;); sendRemark(&quot;h2&quot;);">Show Solution</button>
+                                </span>
+                            </p>
+                            <form name="codeform">
+                                <div id="ace_div" class=" ace_editor ace-chrome" style="font-size: 150%;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; height: 23px; width: 10.7212px; left: 589.279px;"></textarea><div class="ace_gutter" style="display: none;"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: 0px;"></div><div class="ace_gutter-active-line" style="top: 23px; height: 23px;"></div></div><div class="ace_scroller" style="left: 0px; right: 0px; bottom: 17px;"><div class="ace_content" style="margin-top: 0px; width: 694px; height: 404px; margin-left: 0px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 861.7px; visibility: visible;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height:23px;top:23px;left:0;right:0;"></div></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"><div class="ace_line" style="height:23px"><span class="ace_keyword">public</span> <span class="ace_keyword">boolean</span> <span class="ace_identifier">icyHot</span>(<span class="ace_keyword">int</span> <span class="ace_identifier">temp1</span>, <span class="ace_keyword">int</span> <span class="ace_identifier">temp2</span>) {</div><div class="ace_line" style="height:23px"> <span class="ace_keyword">return</span>(<span class="ace_identifier">temp1</span> <span class="ace_keyword ace_operator">&lt;</span> <span class="ace_constant ace_numeric">0</span> <span class="ace_keyword ace_operator">&amp;&amp;</span> <span class="ace_identifier">temp2</span> <span class="ace_keyword ace_operator">&gt;</span> <span class="ace_constant ace_numeric">100</span>) <span class="ace_keyword ace_operator">||</span> (<span class="ace_identifier">temp1</span> <span class="ace_keyword ace_operator">&gt;</span> <span class="ace_constant ace_numeric">100</span> <span class="ace_keyword ace_operator">&amp;&amp;</span> <span class="ace_identifier">temp2</span> <span class="ace_keyword ace_operator">&lt;</span> <span class="ace_constant ace_numeric">0</span>);</div><div class="ace_line" style="height:23px">}</div><div class="ace_line" style="height:23px"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="left: 690.16px; top: 23px; width: 10.7212px; height: 23px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px; bottom: 17px;"><div class="ace_scrollbar-inner" style="width: 22px; height: 92px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="height: 22px; left: 0px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 22px; width: 694px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div>
+
+                            <script>var editor = ace.edit('ace_div');
+                                editor.renderer.setShowGutter(false);
+                                editor.setTheme('ace/theme/chrome');
+                                editor.getSession().setMode('ace/mode/java');
+                                editor.getSession().setTabSize(2);
+                                editor.getSession().setUseSoftTabs(true);
+                                document.ace_editor = editor;
+                                editor.$blockScrolling = Infinity;
+                                setupKey(editor);
+                                startCursor(editor, 'java');
+                            </script>
+
+                                <p>
+                                    <button class="go" onclick="sendCodeAce(); focusEdit(); return false;">Go</button></p>
+                                    <p>Editor font size %:
+                                        <select name="font" onchange="fontChange(event);">
+                                            <option>75</option>
+                                            <option>100</option>
+                                            <option>125</option>
+                                            <option selected="">150</option>
+                                        </select>
+                                        <script>setFontSize(150)</script>
+                                <br>
+                                Shorter output
+                                <input type="checkbox" name="outputonly">
+                                <input type="hidden" name="id" value="p192082">
+                                <input type="hidden" name="owner" value="">
+                                <input type="hidden" name="cuname" value="">
+                                <input type="hidden" name="adate" value="20201013-073631z">
+                            </p>
+                        </form>
+                        </td>
+                        <td width="500" valign="top">
+                            <div id ="results" style="margin-top:10em;margin-left:1em;"></div>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+     </div>
+
+</body>
+</html>
