@@ -7,29 +7,33 @@
 <body>
     <script>
         console.log("이상나라의 별찍기 도전");
-       if( nNumber % 2 == 0){
-        var txt = "";
-        var nNumber= Number(nNumber);
-        nNum =Number(nNum);
-      
-       }
-       for ( i = 0; i<nNum; i+=2){
-           for (k= 0; k < i; k +=2){
-                var txt = "";
-           }
-           for( j = 0 ; j <nNum -1; j ++){
-            txt += "*";
-           }
-       }
-       for (i=nNum-2; i>0; i-=2){
-           for(k =1; k < i; k+=2){
-            var txt = " ";
-           }
-           for (j= 0; j<= nNum-i; j++){
-            txt += "*";
-           }
-           console.log(txt);
-       }
+        for(let i = 0; i < 5; i++)  {
+  for(let j = 4; j > i; j--)  {
+    document.write('&nbsp');
+  }
+  for(let j = 0; j <= i; j++)  {
+    document.write('*');
+  }
+  for(let j = 1; j <= i; j++)  {
+    document.write('*');
+  }
+
+  document.write('<br>');
+}
+
+for(let i = 0; i < 4; i++)  {
+  for(let j = 0; j <= i; j++)  {
+    document.write('&nbsp');
+  }
+  for(let j = 4; j > i; j--)  {
+    document.write('*');
+  }
+  for(let j = 3; j > i; j--)  {
+    document.write('*');
+  }
+  document.write('<br>');
+}
+
     </script>
     console.log(txt);
     var txt = "";

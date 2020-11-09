@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#bnt1').on('click',function(){
+                    $('img').animate({left:'200px'});
+                    console.log("start");
+                });
+                $('#bnt2').on('click',function(){
+                    $('img').animate({left:""});
+                    console.log("start");
+                });
+                $('#btn3').on('click',function(){
+                    $('img').animate({left:'+=50px',opacity:'0.4',width:"+=50px",height:'-=50px'});
+                });
+                $('#bnt4').on('click',function(){
+                    $('img').animate({left:'+=30px'});
+                    $('img').animate({opacity:'0.4'});
+                    $('img').animate({width:'+=50px'});
+                    $('img').animate({height:'+=50px'});
+                });
+                $('#btn5').on('click',function(){
+                    $('img').animate({left:"",opacity:'1.0',width:'200px',height:'200'});
+                })
+                $('#bnt6').on('click',function(){
+                    $('img').stop();
+                });
+            });
+                </script>
+    </head>
+        <body>
+            <p>
+                <button id="bnt1">move</button>
+                <button id="bnt2">moveback</button>
+                <button id="bnt3">multiani</button>
+                <button id="bnt4">sequential</button>
+                <button id="bnt5">reset</button>
+                <button id="bnt6">stop</button>
+            </p>
+            <img src="effect2.jpg">
+        </body>
+</html>
