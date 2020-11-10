@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="codingbat.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div style="float: right; margin: 0px; border: 1px solid lightgray;">
+        <table>
+            <form method="POST" action="/login"></form>
+            <tbody>
+                <tr>
+                    <td>id/email</td>
+                    <td>
+                        <input type="text" name="nume" size="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td>
+                        <input type="password" name="pw" size="20">
+                    </td>
+                </tr>
+                <tr>
+
+                    <td></td>
+                    <td>
+                        <input type="submit" name="dologin" value="log in">
+                    </td>
+                </tr>
+                <input type="hidden" name="fromurl" value="/java/Warmup-2">
+                <tr>
+                    <td colspan="2">
+                        <a href="/reset">forget password</a>
+                        |
+                        <a href="/pref?docreate=1">create account</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="float: right;">
+        <tbody>
+            <tr>
+                <td valign="top" style="text-align: right;" colspan="1">
+                    <a href="/about.html">about</a>
+                    |
+                    <a href="/help">help</a>
+                    |
+                    <a href="/doc/code-help-videos.html">code help+videos |</a>
+                    <a href="/done">done</a>
+                    |
+                    <a href="/pref">prefs</a>
+                </td>
+            </tr>
+        </tbody>
+    </div>
+    <a href="/">
+        <span style="font-size: 200%;">CodingBat</span>
+    </a>
+    code practice
+    <div class="pretab">
+        <p class="max">&nbsp;</p>
+    </div>
+    <div class="tabc">
+        <nav>
+            <ul>
+                <li class="h2" name="tab-name" id="selected">
+                    <a href="javascript:void(0)">Java</a>
+                </li>
+                <li class="h2" name="tab-name">
+                    <a href="javascript:void(0)">Python</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="tabin">
+
+            <div class="indent">
+                <a href="/Codingbat/codigbat2.html">
+                    <span class="h2">Warmup-2</span>
+                </a>
+                >
+                <span class="h2">stringTimes</span>
+                <br>
+                prev&nbsp;|&nbsp;
+                <a href="/Codingbat/codigbat2.html">next</a>
+                &nbsp;|&nbsp;
+                <a rel="nofollow" href="/Codingbat/codigbat2.html">chance</a>
+                <p></p>
+                <table border="0">
+                    <tbody>
+                        <tr>
+                            <td valign="top">
+                                <div class="minh">
+                                    <p class="max2">
+                                        Given a string and non-negative int n, return a larger string that is ncopies of
+                                        the original string
+                                    </p>
+                                </div>
+                                <br>
+                                stringTimes("Hi", 2) → "HiHi"
+                                <br>
+                                stringTimes("Hi", 3) → "HiHiHi"
+                                <br>
+                                stringTimes("Hi", 1) → "Hi"
+                                <p>
+                                    <button class="go" onclick="sendCodeAce();focusEdit();return false;">Go</button>
+                                    ...Save, Compile, Run (ctrl-enter)
+                                    <span style="margin-left: 60px;">
+                                        <button class="gray" onclick="document.getElementById(&quot;results&quot;).innerHTML=&quot;<b>Solution:</b><pre>&quot;+unescape(&quot;public String stringTimes(String str, int n) {%0a  String result = %26quot;%26quot;;%0a  for (int i=0; i%26lt;n; i++) {%0a    result = result + str;  // could use += here%0a  }%0a  return result;%0a}&quot; + &quot;</pre>&quot;); sendRemark(&quot;h2&quot;);">Show Solution</button>
+                            </span>
+                        </p>
+                        <form name="codeform">
+                            <div id="ace_div" class="ace_editor ace-chrom" draggable="false">
+                                <textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0;height: 14px; width: 6.59781px;left: 17.1956px;"></textarea>
+                                <div class="ace_gutter" style="display: none;">
+                                    <div class="ace_gutter-layer ace-folding-enabled" style="margin-top:0px;">
+                                        <div class="ace_gutter-active-line" style="top: 14px; height: 14px;">
+                                        </div>
+                                    </div>
+                                    <div class="ace_scroller" style="left: 0px; right: 0px; bottom: 0px;">
+                                        <div class="ace_content" style="margin-top:0px; width: 600px; height: 403px; margin-left: 0px;">
+                                            <div class="ace_layer ace_print-margin-layer">
+                                                <div class="ace_print-margin" style="left: 531.825px; visibility: visible;"></div>
+                                            </div>
+                                            <div class="ace_active-line" style="height: 14px;top: 14px;left: 0;right: 0;"></div>
+                                        </div>
+                                        <div class="ace_layer ace_text-layer" style="padding: 0px 4px;" >
+                                            <div class="ace_line" style="height: 14px;">
+                                                <span class="ace_keyword">public</span>
+                                                <span class="ace_support ace_function">String</span>
+                                                <span class="ace_identifier">stringTimes</span>
+                                                (
+                                                    <span class="ace_suport ace_function">String</span>
+                                                    <span class="ace_identifier">str</span>
+                                                    ,
+                                                    <span class="ace_keyword">int</span>
+                                                    <span class="ace_identifier">n</span>
+                                                    ) {
+                                                    </div>
+                                                    <div class="ace_line"style="height:14px">  </div>
+                                                    <div class="ace_line"style="height:14px"></div>
+                                                    <div class="ace_line"style="height:14px"></div>
+                                                </div>
+                                                <div class="ace_layer ace_marker-layer"></div>
+                                                <div class="ace_layer ace_cursor-layer ace_hidden-cursors">
+                                                    <div class="ace_cursor" style="left: 17.1956px; top: 14px; width: 6.59781px; height: 14px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px; bottom: 0px;">
+                                            <div class="ace_scrollbar-inner" style="width: 22px; height: 56px;"></div>
+                                        </div>
+                                        <div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;">
+                                            <div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div>
+                                            <div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">
+                                                public String stringTimes(String str, int n){ } </div>
+                                            </div>
+                                        </div> 
+                                        <script>var editor = ace.edit('ace_div');
+                                            editor.renderer.setShowGutter(false);
+                                            editor.setTheme('ace/theme/chrome');
+                                            editor.getSession().setMode('ace/mode/java');
+                                            editor.getSession().setTabSize(2);
+                                            editor.getSession().setUseSoftTabs(true);
+                                            document.ace_editor = editor;
+                                            editor.$blockScrolling = Infinity;
+                                            setupKey(editor);
+                                            startCursor(editor, 'java');
+                                        </script>
+                                <p>
+                                    <button class="go" onclick="sendCodeAce(); focusEdit(); return false;">Go
+                                    </button>
+                                </p>
+                                <p>Editor font size %:
+                                    <select name="font" onchange="fontChange(event);">
+                                        <option>75</option>
+                                        <option selected>100</option>
+                                        <option>125</option>
+                                        <option>150</option>
+                                    </select>
+                                    <br>
+                                    Shorter output
+                                    <input type="checkbox" name="outputonly">
+                                    <input type="hidden" name="id" value="p142270">
+                                    <input type="hidden" name="owner" value>
+                                    <input type="hidden" name="cuname" value>
+                                    <input type="hidden" name="adate" value="20201110-071445z">
+                                </p>
+                            </form>
+                        </td>
+                        <td width="500" valign="top">
+                            <div id="results" style="margin-top:10em;margin-left:1em;"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a rel="nofollow" href="/prob/p142270?clear=1">Forget It!</a>
+            -- delete my code for this problem
+            <p>
+                Progress graphs: 
+                <br>
+                &nbsp;
+                <a href="/done/p142270">Your progress graph</a>
+                for this problem
+                <br>
+                &nbsp;
+                <a rel="nofollow" href="/done/p142270?random">Random user progress graph</a>
+                for this problem
+                <br>
+                &nbsp;
+                <a rel="nofollow" href="/done/epic">Random Epic Progress Graph</a>
+            </p>
+            <h3>Java Help</h3>
+            <p style="max-width: 800px;"></p>
+            <ul>
+                <li>
+                    
+                    <a href="#">Java Example Solution code</a>
+                </li>
+                <li>
+                    <a href="#">Java String Introduction</a>
+                    (vido)
+                </li>
+                <li>
+                    <a href="#">Java Substring v2</a>
+                    (vido)
+                </li>
+                <li>
+                    <a href="#">Java String Equals and Loops</a>
+                </li>
+                <li>
+                    <a href="#">Java String indexOf and parsing</a>
+                </li>
+                <li>
+                    <a href="#"> &nbsp; If Boolean Logic Example Solution Code1</a>
+                    (vido)
+                </li>
+                <li>
+                    <a href="#">&nbsp; If Boolean Logic Example Solution Code2</a>
+                    (vido)
+                </li>
+                <li>
+                    <a href="#">Java For and While Loops</a>
+                </li>
+                <li>
+                    <a href="#">Java Array and Loops</a>
+                </li>
+                <li>
+                    <a href="#">Java Map Introduction</a>
+                </li>
+                <li>
+                    <a href="#">Java Map WordCount</a>
+                </li> 
+                <li>
+                    <a href="#">Java Functional Mapping</a>
+                </li>
+                <li>
+                    <a href="#">Java Functional Fitering</a>
+                </li> 
+            </ul>
+            <p style="max-width: 800px;"></p>
+            <h3>Misc Code Practice</h3>
+            <ul>
+                <li>
+                    <a href="#">Code Badges</a>
+                </li>
+                <li>
+                    <a href="#">Introduction to Mod</a>
+                    (vido)
+                </li>
+                <li>
+                    <a href="#">MakeBricks problem and solution</a>
+                    (vido x2)
+                </li>
+                <li>
+                    <a href="#">FizzBuzz the famous</a>
+                    code interview question(vido)
+                </li>
+            </ul>
+            <script>
+                document.querySelectorAll('[name=tab-name]').forEach(function (element) {
+                    element.addEventListener('click', function (event) {
+                        document.querySelectorAll('[name=tab-name]').forEach(function (element) {
+                            element.removeAttribute('id')
+                        });
+
+                        var target = event.currentTarget;
+                        if (!target.getAttribute('id')) {
+                            target.setAttribute('id', 'selected')
+                        } else {
+                            target.removeAttribute('id')
+                        }
+                    })
+                });
+            </script>
+        </div>
+    </div>
+</div>
+</body>
+</html>
