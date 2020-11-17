@@ -5,6 +5,11 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="codingbat.css">
+    <!-- <script src='ace.js' type='text/javascript' charset='utf-8'></script> -->
+    <script src='stringTimes.js' type='text/javascript' charset='utf-8'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" integrity="sha512-GZ1RIgZaSc8rnco/8CXfRdCpDxRCphenIiZ2ztLy3XQfCbQUSCuk8IudvNHxkRA3oUg6q0qejgN/qqyG1duv5Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/mode-java.min.js" integrity="sha512-cBlD1MiRruu3tqWXrtxq3TrDDGF5NWpUQftHE6kS412z04C/nfl6DPMAJi2UJ70+X3eaCjiUdw7m1SaWPytZ2g==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/theme-chrome.min.js" integrity="sha512-Ii/umaZEkkMZzbFuBG8cHu7YG7amg6VfaNpLe8njaXaqN9/RRXp95awJUd3gFEBYNym307V8YkWS4ZWHZvDSZw==" crossorigin="anonymous"></script>
     <style>
     </style>
 </head>
@@ -115,73 +120,36 @@
                                         <button class="gray" onclick="document.getElementById(&quot;results&quot;).innerHTML=&quot;<b>Solution:</b><pre>&quot;+unescape(&quot;public String stringTimes(String str, int n) {%0a  String result = %26quot;%26quot;;%0a  for (int i=0; i%26lt;n; i++) {%0a    result = result + str;  // could use += here%0a  }%0a  return result;%0a}&quot; + &quot;</pre>&quot;); sendRemark(&quot;h2&quot;);">Show Solution</button>
                             </span>
                         </p>
-                        <form name="codeform">
-                            <div id="ace_div" class="ace_editor ace-chrom" draggable="false">
-                                <textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0;height: 14px; width: 6.59781px;left: 17.1956px;"></textarea>
-                                <div class="ace_gutter" style="display: none;">
-                                    <div class="ace_gutter-layer ace-folding-enabled" style="margin-top:0px;">
-                                        <div class="ace_gutter-active-line" style="top: 14px; height: 14px;">
-                                        </div>
-                                    </div>
-                                    <div class="ace_scroller" style="left: 0px; right: 0px; bottom: 0px;">
-                                        <div class="ace_content" style="margin-top:0px; width: 600px; height: 403px; margin-left: 0px;">
-                                            <div class="ace_layer ace_print-margin-layer">
-                                                <div class="ace_print-margin" style="left: 531.825px; visibility: visible;"></div>
-                                            </div>
-                                            <div class="ace_active-line" style="height: 14px;top: 14px;left: 0;right: 0;"></div>
-                                        </div>
-                                        <div class="ace_layer ace_text-layer" style="padding: 0px 4px;" >
-                                            <div class="ace_line" style="height: 14px;">
-                                                <span class="ace_keyword">public</span>
-                                                <span class="ace_support ace_function">String</span>
-                                                <span class="ace_identifier">stringTimes</span>
-                                                (
-                                                    <span class="ace_suport ace_function">String</span>
-                                                    <span class="ace_identifier">str</span>
-                                                    ,
-                                                    <span class="ace_keyword">int</span>
-                                                    <span class="ace_identifier">n</span>
-                                                    ) {
-                                                    </div>
-                                                    <div class="ace_line"style="height:14px">  </div>
-                                                    <div class="ace_line"style="height:14px"></div>
-                                                    <div class="ace_line"style="height:14px"></div>
-                                                </div>
-                                                <div class="ace_layer ace_marker-layer"></div>
-                                                <div class="ace_layer ace_cursor-layer ace_hidden-cursors">
-                                                    <div class="ace_cursor" style="left: 17.1956px; top: 14px; width: 6.59781px; height: 14px;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px; bottom: 0px;">
-                                            <div class="ace_scrollbar-inner" style="width: 22px; height: 56px;"></div>
-                                        </div>
-                                        <div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;">
-                                            <div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div>
-                                            <div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">
-                                                public String stringTimes(String str, int n){ } </div>
-                                            </div>
-                                        </div> 
-                                <p>
-                                    <button class="go" onclick="sendCodeAce(); focusEdit(); return false;">Go
-                                    </button>
-                                </p>
-                                <p>Editor font size %:
-                                    <select name="font" onchange="fontChange(event);">
-                                        <option>75</option>
-                                        <option selected>100</option>
-                                        <option>125</option>
-                                        <option>150</option>
-                                    </select>
-                                    <br>
-                                    Shorter output
-                                    <input type="checkbox" name="outputonly">
-                                    <input type="hidden" name="id" value="p142270">
-                                    <input type="hidden" name="owner" value>
-                                    <input type="hidden" name="cuname" value>
-                                    <input type="hidden" name="adate" value="20201110-071445z">
-                                </p>
-                            </form>
+                        <form name=codeform>
+                            <div id='ace_div'>public String stringTimes(String str, int n) {
+                                
+                            
+                            }
+            </div>
+             </div>
+        </div> 
+        </div>
+            
+                        <p>
+                            <button class="go" onclick="sendCodeAce(); focusEdit(); return false;">Go
+                            </button>
+                        </p>
+                        <p>Editor font size %:
+                            <select name="font" onchange="fontChange(event);">
+                                <option>75</option>
+                                <option selected>100</option>
+                                <option>125</option>
+                                <option>150</option>
+                            </select>
+                            <br>
+                            Shorter output
+                            <input type="checkbox" name="outputonly">
+                            <input type="hidden" name="id" value="p142270">
+                            <input type="hidden" name="owner" value>
+                            <input type="hidden" name="cuname" value>
+                            <input type="hidden" name="adate" value="20201110-071445z">
+                        </p>
+                       
                         </td>
                         <td width="500" valign="top">
                             <div id="results" style="margin-top:10em;margin-left:1em;"></div>
@@ -273,17 +241,6 @@
                     code interview question(vido)
                 </li>
             </ul>
-                                        <script>var editor = ace.edit('ace_div');
-                                            editor.renderer.setShowGutter(false);
-                                            editor.setTheme('ace/theme/chrome');
-                                            editor.getSession().setMode('ace/mode/java');
-                                            editor.getSession().setTabSize(2);
-                                            editor.getSession().setUseSoftTabs(true);
-                                            document.ace_editor = editor;
-                                            editor.$blockScrolling = Infinity;
-                                            setupKey(editor);
-                                            startCursor(editor, 'java');
-                                        </script>
             <script>
                 document.querySelectorAll('[name=tab-name]').forEach(function (element) {
                     element.addEventListener('click', function (event) {
@@ -299,7 +256,19 @@
                         }
                     })
                 });
-            </script>
+               </script>
+                <script src='ace.js' type='text/javascript' charset='utf-8'></script>
+                <script>var editor = ace.edit('ace_div');
+                    editor.renderer.setShowGutter(false);
+                    editor.setTheme('ace/theme/chrome');
+                    editor.getSession().setMode('ace/mode/java');
+                    editor.getSession().setTabSize(2);
+                    editor.getSession().setUseSoftTabs(true);
+                    document.ace_editor = editor;
+                    editor.$blockScrolling = Infinity;
+                    setupKey(editor);
+                    startCursor(editor, 'java');
+                </script>
         </div>
     </div>
 </div>
