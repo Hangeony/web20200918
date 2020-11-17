@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
-        .imgButton{
-            background: url("effect1.png");
-            border:none;
-            width: 211px;
-            height: 333px;
-            font-weight: top;
-            
-        }
-        body{
-            background-image: url("effect3.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 1600px;
-            }
-        
-    
+      .imgButton {
+        background: url("https://raw.githubusercontent.com/Hangeony/web20200918/master/%EC%8B%A4%ED%97%98%EC%B2%B4/effect1.png");
+        border: none;
+        width: 211px;
+        height: 333px;
+        font-weight: top;
+      }
+      body {
+        background-image: url("https://raw.githubusercontent.com/Hangeony/web20200918/master/%EC%8B%A4%ED%97%98%EC%B2%B4/effect3.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 1600px;
+      }
+
+      .img {
+        position: absolute;
+        top: 10px;
+        left: 40px;
+        z-index: -1;
+      }
     </style>
     <script>
-       $(document).ready(function(){
-           $(".imgButton").click(function(){
-               $(".img").toggle();
-           });
+        var status = "DOWN";
+        $(document).ready(function () {
+          $(".imgButton").click(function () {
+            if (status === "DOWN") {
+              $(".img").animate({ top: "+=600" }, "slow");
+              status = "UP";
+            } else {
+              $(".img").animate({ top: "-=600" }, "slow");
+              status = "DOWN";
+            }
+          });
         });
-    </script>
-</head>
-<body>
-    <button class="imgButton"></button><br>
-    <img src="effect2.png" class="img" hidden>
-</body>
+      </script>
+  
+  </head>
+  <body>
+    <button class="imgButton"></button><br />
+    <img
+      src="https://raw.githubusercontent.com/Hangeony/web20200918/master/%EC%8B%A4%ED%97%98%EC%B2%B4/effect2.png"
+      class="img"
+    />
+  </body>
 </html>
